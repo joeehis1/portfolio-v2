@@ -1,0 +1,18 @@
+
+@use '../mixins' as *;
+@use '../variables' as *;
+
+footer{
+    background-color: $color-black;
+    color: $color-gray;
+    text-align: center;
+    padding-block: 1.2rem;
+
+    p{
+        text-decoration: underline;
+    }
+    a{
+        font-family: $ff-serif;
+        font-size: 0.8rem;
+    }
+}
