@@ -29,12 +29,11 @@
         width: 40%;
         text-align: left;
     }
-
-
 }
 
-
-.about-bottom .sub-title {
-    text-align: center;
-    margin: 0;
+.about-bottom{
+    @include for-size(laptop){
+        margin-left: auto;
+        width: 60%;
+    }
 }
