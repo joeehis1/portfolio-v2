@@ -1,4 +1,4 @@
-
+@use './variables' as *;
 // Using the older syntax for better support
 // media query mixin
 
@@ -16,4 +16,13 @@
             @content;
         }
     }
+}
+
+
+@mixin six-cap-title($font-size, $color){
+    font-size: $font-size;
+    letter-spacing: 6px;
+    font-family: $ff-san-serif;
+    color: $color;
+    text-transform: uppercase;
 }

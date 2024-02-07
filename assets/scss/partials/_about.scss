@@ -1,6 +1,14 @@
+@use '../variables' as *;
+@use '../mixins' as *;
 
 .about-me {
     margin-block: 3.3125rem;
+}
+
+.about-role{
+    @include six-cap-title(2.56rem, $color-black);
+    text-align: center;
+    font-weight: 900;
 }
 
 
@@ -23,4 +31,10 @@
     }
 
 
+}
+
+
+.about-bottom .sub-title {
+    text-align: center;
+    margin: 0;
 }

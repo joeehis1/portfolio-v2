@@ -14,12 +14,9 @@
 }
 
 .welcome-title{
-    font-size: 3.56rem;
-    letter-spacing: 6px;
-    font-family: $ff-san-serif;
+    @include six-cap-title(3.56rem, $color-gray);
     margin-bottom: 0;
-    color: $color-gray;
-    text-transform: uppercase;
+   
 }
 
 .welcome-text {
