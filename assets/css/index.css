@@ -319,6 +319,9 @@ nav[data-open=true] {
   }
 }
 
+.contact {
+  margin-block: 2.85rem;
+}
 .contact h2 {
   margin: 0;
 }
