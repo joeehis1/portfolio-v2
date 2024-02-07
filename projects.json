@@ -1,0 +1,72 @@
+[
+    {
+        "id": "71c4d42a-f013-4cdf-9fda-42f6dc66b9a4",
+        "name": "Color Scheme Generator",
+        "description": "This is a color scheme generator built using vanilla javascript. It gets its data from the color API.A typical user has the ability to select a color, define a color scheme and generate a scheme to be used for their particular needs.",
+        "src": "project-color-scheme-generator.png",
+        "alt": "An image showing the active state of the color scheme generator project",
+        "repoURL": "https://github.com/joeehis1/Color-scheme-generator",
+        "isFeatured": false,
+        "liveSiteURL": "https://hilarious-cheesecake-7711e7.netlify.app/"
+    },
+    {
+        "id": "6da12013-a680-4267-8c72-8a680ff106aa",
+        "name": "Password Generator",
+        "description": "This is a password generator built using html, css and vanilla javascript. A typical user has the ability to select their desired password length and the type of characters to use in their password. Once the password has being created they are able to click on an icon to copy generated password",
+        "src": "project-password-gen.png",
+        "alt": "An image Showing the active state of the password generator project",
+        "isFeatured": false,
+        "repoURL": "https://github.com/joeehis1/password-generator",
+        "liveSiteURL": "https://github.com/joeehis1/password-generator"
+    },
+    {
+        "id": "80589cff-e50d-4d01-a51b-dce5b48e9f10",
+        "name": "Quiz Application",
+        "description": "This is a quiz application built using react. The data for the quiz is obtained from the open trivia database. A typical user is able to select their desired difficulty level and the category of questions that they'd like to answer. After completing the quiz which consists of five questions, they're able to see their scores and they have the option to reset the quiz and pick another category of questions.",
+        "alt": "An Image showing the introductory section of a quiz application",
+        "src": "project-quiz-application.png",
+        "isFeatured": false,
+        "repoURL": "https://github.com/joeehis1/Quizzical",
+        "liveSiteURL": "https://relaxed-starburst-7ce14d.netlify.app/"
+    },
+    {
+        "id": "55c9b9aa-36d2-4fdb-9f19-8ddac5768929",
+        "name": "Unit Converter",
+        "description": "This is unit converter built using html, css and javascript. A typical user would be able to get a unit conversion for mass, length and volume in both metric and imperial units by entering a number into the input field.",
+        "alt": "An image showing the active state of a unit converter application",
+        "src": "project-unit-converter.png",
+        "repoURL": "https://github.com/joeehis1/unit_converter",
+        "isFeatured": false,
+        "liveSiteURL": "https://heroic-profiterole-f951b8.netlify.app/"
+    },
+    {
+        "id": "184250e1-7d96-447b-a9dc-19b20596133b",
+        "name": "Tenzies Game",
+        "description": "This is a minimal app build of the tenzies game. In this build, a player would typically attempt to get the same number showing on every dice roll. Each \"roll\" of the dice generates a random number on each die face. As soon as every die face is the same, the timer stops running. Each time a user resets the game, the timer starts back up and the user's times for each game session is displayed on a table that can be displayed or hidden.",
+        "alt": "An image showing the initial state of the tenzies game",
+        "src": "project-tenzies.png",
+        "repoURL": "https://github.com/joeehis1/tenzies-project",
+        "isFeatured": false,
+        "liveSiteURL": "https://quiet-sopapillas-e4cbaf.netlify.app/"
+    },
+    {
+        "id": "b9440077-a341-46c8-8c4d-4c3c04162ea5",
+        "name": "Movie watchlist",
+        "description": "The watchlist application was built using html, css and vanilla javascript. A typical user would search for a movie they intended on watching. The input string would be used in making a call to the open movie database API to retrieve all movies related to that particular search string. Each result can be saved and viewed later since all searches are saved to local storage",
+        "alt": "An image showing the initial state of the movie watchlist project",
+        "src": "project-watchlist-app.png",
+        "repoURL": "https://github.com/joeehis1/movie-watchlist",
+        "isFeatured": false,
+        "liveSiteURL": "https://incomparable-sable-5ad6b9.netlify.app/"
+    },
+    {
+        "id": "c60e9b78-a19e-4573-930d-8059ec75ab14",
+        "name": "Markdown Editor",
+        "description": "This is a markdown editor that has a dark and light mode functionality built using react. I used redux for state management. All documents and previously selected items are saved to local storage so a user will be able to continue from where they were prior to closing the application.",
+        "alt": "This is an image showing the initial state of the markdown editor project",
+        "isFeatured": true,
+        "src": "project-markdown-editor.png",
+        "repoURL": "https://github.com/joeehis1/markdown-editor",
+        "liveSiteURL": "https://venerable-belekoy-9692bc.netlify.app/"
+    }
+]
