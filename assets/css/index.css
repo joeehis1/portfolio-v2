@@ -75,6 +75,12 @@ ul {
   list-style: none;
 }
 
+.container {
+  max-width: 1024px;
+  width: 95%;
+  margin: 0 auto;
+}
+
 button {
   cursor: pointer;
   background-color: #3B60E4;
@@ -208,6 +214,27 @@ nav[data-open=true] {
 
 .image-left {
   background-image: url("../../assets/images/image-left.jpg");
+}
+
+.about-me {
+  margin-block: 3.3125rem;
+}
+
+.about-top {
+  display: grid;
+  grid-template-columns: [image-start] 18% [title-start] auto [image-end] 1rem [title-end];
+  grid-template-rows: [image-start] 38% [title-start] 7rem [title-end] auto [image-end];
+}
+.about-top img {
+  grid-column: image-start/image-end;
+  grid-row: image-start/image-end;
+}
+.about-top h2 {
+  grid-column: title-start/title-end;
+  grid-row: title-start/title-end;
+  margin: 0;
+  width: 40%;
+  text-align: left;
 }
 
 /*# sourceMappingURL=index.css.map */
