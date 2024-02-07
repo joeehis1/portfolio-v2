@@ -275,7 +275,10 @@
         <section id="contact-section" class="contact">
             <div class="container">
                 <h2>Contact me</h2>
-                <form action="">
+                <form action="" data-status-visible="false">
+                    <p class="status" data-status="">
+                        This is a status message
+                    </p>
                     <label>
                         <span>Name:</span>
                         <input type="text" name="full_name" required />
@@ -325,6 +328,7 @@
                 <li><a href="tel:+16477859570">+1 (647) 785-9570</a></li>
             </ul>
         </footer>
+        <script type="module" src="./assets/js/form.js"></script>
         <script type="module" src="./assets/js/navbar.js"></script>
         <script type="module" src="./assets/js/ModalClass.js"></script>
         <script type="module" src="./assets/js/GalleryClass.js"></script>

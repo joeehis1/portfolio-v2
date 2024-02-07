@@ -28,6 +28,21 @@
             }
         }
 
+        
+
+        .status{
+            color: $color-gray;
+            padding: 0.5rem;
+            text-align: center;
+            transition: opacity 350ms ease, transform 350ms ease;
+            &[data-status="success"]{
+                background-color: $color-success;
+            }
+            &[data-status="success"] {
+                background-color: $color-success;
+            }
+        }
+
         input,
         textarea {
             width: 100%;
@@ -48,6 +63,21 @@
             min-height: 8rem;
             resize: none;
         }
+
+        &[data-status-visible="false"]{
+            .status{
+                opacity: 0;
+                transform: translateX(-1000000px);
+                overflow: hidden;
+            }
+        }
+        &[data-status-visible="true"] {
+            .status {
+                opacity: 1;
+                transform: translateX(0);
+                overflow: auto;
+            }
+        }
     }
 
     @include for-size(laptop){
@@ -56,6 +86,7 @@
             grid-template-columns: repeat(2, 1fr);
             column-gap: 0.4rem;
             grid-template-areas:
+                "status status"
                 "inp-name inp-email"
                 "inp-text inp-text"
                 ". btn-submit";
@@ -70,6 +101,10 @@
     
             label:has(textarea[name="message"]) {
                 grid-area: inp-text;
+            }
+
+            .status{
+                grid-area: status;
             }
     
             button {

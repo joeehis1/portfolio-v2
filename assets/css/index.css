@@ -420,6 +420,18 @@ nav[data-open=true] {
   background-color: #080708;
   color: #D9D9D9;
 }
+.contact form .status {
+  color: #D9D9D9;
+  padding: 0.5rem;
+  text-align: center;
+  transition: opacity 350ms ease, transform 350ms ease;
+}
+.contact form .status[data-status=success] {
+  background-color: rgba(64, 205, 64, 0.8392156863);
+}
+.contact form .status[data-status=success] {
+  background-color: rgba(64, 205, 64, 0.8392156863);
+}
 .contact form input,
 .contact form textarea {
   width: 100%;
@@ -436,12 +448,22 @@ nav[data-open=true] {
   min-height: 8rem;
   resize: none;
 }
+.contact form[data-status-visible=false] .status {
+  opacity: 0;
+  transform: translateX(-1000000px);
+  overflow: hidden;
+}
+.contact form[data-status-visible=true] .status {
+  opacity: 1;
+  transform: translateX(0);
+  overflow: auto;
+}
 @media screen and (min-width: 780px) {
   .contact form {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 0.4rem;
-    grid-template-areas: "inp-name inp-email" "inp-text inp-text" ". btn-submit";
+    grid-template-areas: "status status" "inp-name inp-email" "inp-text inp-text" ". btn-submit";
   }
   .contact form label:has(input[name=full_name]) {
     grid-area: inp-name;
@@ -451,6 +473,9 @@ nav[data-open=true] {
   }
   .contact form label:has(textarea[name=message]) {
     grid-area: inp-text;
+  }
+  .contact form .status {
+    grid-area: status;
   }
   .contact form button {
     grid-area: btn-submit;
