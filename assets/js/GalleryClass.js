@@ -6,15 +6,7 @@
 // rendering list items is also an intialisation operation
 // event delegation on gallery
 
-class Modal {
-    constructor(modal) {
-        this.modal = document.querySelector(modal);
-    }
-
-    open(project) {
-        console.log(project);
-    }
-}
+import { Modal } from "./ModalClass.js";
 
 export class Gallery {
     constructor(container, modal, projectURL) {
@@ -33,7 +25,16 @@ export class Gallery {
             return url;
         });
         const imageSrc = await Promise.all(imageSrcPromise);
-        this.imgSRC = imageSrc;
+
+        // This is to update the project list with object urls instead of path names from the json file
+        const updatedList = this.list.map((item, index) => {
+            return {
+                ...item,
+                src: imageSrc[index],
+            };
+        });
+
+        this.list = updatedList;
 
         // This function will be used multiple times to generate the list
         this.render();
@@ -46,6 +47,7 @@ export class Gallery {
             const featuredProject = this.list.find(
                 (item) => item.id === projectId
             );
+
             this.modal.open(featuredProject);
             this.setFeatured(projectId);
         });
@@ -57,9 +59,7 @@ export class Gallery {
                 return `
                 <li class="portfolio-item ${item.isFeatured ? "featured" : ""}">
                         <figure>
-                            <img src="${this.imgSRC[index]}" alt="${
-                    item.alt
-                }" />
+                            <img src="${item.src}" alt="${item.alt}" />
                             <figcaption>
                                 <h3>${item.name}</h3>
                                 ${
