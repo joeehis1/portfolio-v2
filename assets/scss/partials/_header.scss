@@ -1,0 +1,52 @@
+@use '../variables' as *;
+
+header {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background-image: url('../../assets/images/header-img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: $color-black-alpha;
+    background-blend-mode: multiply;
+    background-position: center;
+
+}
+
+.header-text{
+    text-align: center;
+    color: white;
+
+    span {
+        display: block;
+        color: $color-accent;
+        font-family: $ff-san-serif;
+        font-size: 6rem;
+        letter-spacing: 6.02px;
+    }
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    min-height: 100vh;
+    background-color: $color-black;
+    display: grid;
+    place-items: center;
+    transition: right 350ms ease;
+
+    &[data-open="false"] {
+        right: 100%;
+
+        ul {
+            display: none;
+        }
+    }
+
+    &[data-open="true"] {
+        right: 20%;
+    }
+    
+}

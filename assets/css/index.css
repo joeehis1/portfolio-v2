@@ -53,6 +53,10 @@ a {
   font-size: 4rem;
   text-decoration: none;
   color: #D9D9D9;
+  transition: color ease 350ms;
+}
+a:hover {
+  color: #3B60E4;
 }
 
 h3 {
@@ -69,6 +73,94 @@ figcaption {
 
 ul {
   list-style: none;
+}
+
+button {
+  cursor: pointer;
+  background-color: #3B60E4;
+  border: none;
+  color: white;
+  font-weight: 700;
+  font-size: 0.85rem;
+  padding: 0.85rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  transition: color 350ms ease, background-color 350ms ease;
+}
+button:hover {
+  color: var(--color-accent);
+  background-color: whitesmoke;
+}
+
+.btn-nav-toggle {
+  position: fixed;
+  top: 8px;
+  left: 8px;
+  width: 2rem;
+  height: 2rem;
+  font-size: 1.5rem;
+  border-radius: 0.4rem;
+  padding: 1.8rem;
+  z-index: 8;
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" fill="white"/></svg>');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60%;
+  transition: border-radius 350ms ease;
+}
+.btn-nav-toggle:hover {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" fill="%233B60E4"/></svg>');
+}
+.btn-nav-toggle[data-menu-open=true] {
+  border-radius: 3rem;
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" fill="white"/></svg>');
+}
+.btn-nav-toggle[data-menu-open=true]:hover {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" fill="%233B60E4"/></svg>');
+}
+
+header {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background-image: url("../../assets/images/header-img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(8, 7, 8, 0.9490196078);
+  background-blend-mode: multiply;
+  background-position: center;
+}
+
+.header-text {
+  text-align: center;
+  color: white;
+}
+.header-text span {
+  display: block;
+  color: #3B60E4;
+  font-family: "Six Caps", san-serif;
+  font-size: 6rem;
+  letter-spacing: 6.02px;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-height: 100vh;
+  background-color: #080708;
+  display: grid;
+  place-items: center;
+  transition: right 350ms ease;
+}
+nav[data-open=false] {
+  right: 100%;
+}
+nav[data-open=false] ul {
+  display: none;
+}
+nav[data-open=true] {
+  right: 20%;
 }
 
 /*# sourceMappingURL=index.css.map */
