@@ -108,7 +108,7 @@ button {
     transition: color 350ms ease, background-color 350ms ease;
 
     &:hover {
-        color: var(--color-accent);
+        color: $color-accent;
         background-color: whitesmoke;
     }
 }
