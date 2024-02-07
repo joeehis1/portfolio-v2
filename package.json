@@ -1,0 +1,17 @@
+{
+    "dependencies": {
+        "sass": "^1.70.0"
+    },
+    "name": "portfolio-v2",
+    "description": "This repository includes code for my portfolio website. I built another website like this but this version is more javascript heavy.",
+    "version": "1.0.0",
+    "main": "index.js",
+    "devDependencies": {},
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "watch-scss": "sass --watch ./assets/scss/index.scss ./assets/css/index.css"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+}
