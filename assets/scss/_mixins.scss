@@ -1,0 +1,18 @@
+
+// Using the older syntax for better support
+
+@mixin for-size($size){
+    @if $size == mobile {
+        @media screen and (max-width: 480px) {
+            @content;
+        }
+    } @else if $size == ipad {
+        @media (min-width: 481px) and (max-width: 768px) {
+            @content;
+        }
+    } @else if $size == laptop {
+        @media screen and (min-width: 768px) {
+            @content;
+        }
+    }
+}
