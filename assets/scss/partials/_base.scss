@@ -1,0 +1,77 @@
+@use '../mixins' as *;
+@use '../variables' as *;
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+
+body {
+    line-height: 1.6;
+    margin: 0;
+    font-family: $ff-serif;
+}
+
+// Reset by josh comeau
+
+img,
+svg {
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+}
+
+input,
+textarea,
+button,
+label {
+    display: inline-block;
+    font: inherit;
+}
+
+h1{
+    font-size: 1.25rem;
+}
+
+h2{
+    font-size: 3rem;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.1;
+    margin-top: 0;
+    font-weight: 900;
+}
+
+h2{
+    font-size: 3rem;
+    color: $color-accent;
+}
+
+a{
+    font-family: $ff-san-serif;
+    font-size: 4rem;
+    text-decoration: none;
+    color: $color-gray;
+}
+
+h3{
+    font-family: $ff-san-serif;
+    font-size: 3.56rem;
+}
+
+figure,
+ul,
+figcaption {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
