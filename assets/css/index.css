@@ -318,4 +318,58 @@ nav[data-open=true] {
   }
 }
 
+.contact h2 {
+  margin: 0;
+}
+.contact form {
+  margin-top: 1.5rem;
+  width: 60%;
+  min-width: 250px;
+  margin-inline: auto;
+}
+.contact form label {
+  display: grid;
+  margin-bottom: 1.4rem;
+}
+.contact form button {
+  margin-left: auto;
+  display: block;
+}
+.contact form input,
+.contact form textarea {
+  width: 100%;
+}
+.contact form input:invalid,
+.contact form textarea:invalid {
+  outline: 1px dotted #d75757;
+}
+.contact form input:focus:invalid,
+.contact form textarea:focus:invalid {
+  outline: none;
+}
+.contact form textarea {
+  min-height: 8rem;
+  resize: none;
+}
+@media screen and (min-width: 780px) {
+  .contact form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 0.4rem;
+    grid-template-areas: "inp-name inp-email" "inp-text inp-text" ". btn-submit";
+  }
+  .contact form label:has(input[name=full_name]) {
+    grid-area: inp-name;
+  }
+  .contact form label:has(input[name=email]) {
+    grid-area: inp-email;
+  }
+  .contact form label:has(textarea[name=message]) {
+    grid-area: inp-text;
+  }
+  .contact form button {
+    grid-area: btn-submit;
+  }
+}
+
 /*# sourceMappingURL=index.css.map */

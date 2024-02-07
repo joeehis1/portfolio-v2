@@ -1,4 +1,75 @@
+@use '../mixins' as *;
+@use '../variables' as *;
+
 
 .contact{
+    h2 {
+        margin: 0;
+    }
+
+    form {
+        margin-top: 1.5rem;
+        width: 60%;
+        min-width: 250px;
+        margin-inline: auto;
+
+        label {
+            display: grid;
+            margin-bottom: 1.4rem;
+        }
+
+        button {
+            margin-left: auto;
+            display: block;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+
+            &:invalid {
+                outline: 1px dotted $color-warn;
+            }
+
+            &:focus {
+                &:invalid {
+                    outline: none;
+                }
+            }
+
+        }
+
+        textarea {
+            min-height: 8rem;
+            resize: none;
+        }
+    }
+
+    @include for-size(laptop){
+        form {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 0.4rem;
+            grid-template-areas:
+                "inp-name inp-email"
+                "inp-text inp-text"
+                ". btn-submit";
     
+            label:has(input[name="full_name"]) {
+                grid-area: inp-name;
+            }
+    
+            label:has(input[name="email"]) {
+                grid-area: inp-email;
+            }
+    
+            label:has(textarea[name="message"]) {
+                grid-area: inp-text;
+            }
+    
+            button {
+                grid-area: btn-submit;
+            }
+        }
+    }
 }
