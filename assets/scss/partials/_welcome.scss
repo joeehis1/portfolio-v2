@@ -1,0 +1,48 @@
+
+@use '../variables' as *;
+@use '../mixins' as *;
+
+.welcome{
+    display: grid;
+    
+    @include for-size(ipad) {
+        grid-template-columns: auto 70vw auto;
+    }
+    @include for-size(laptop) {
+        grid-template-columns: auto 40vw auto;
+    }
+}
+
+.welcome-title{
+    font-size: 3.56rem;
+    letter-spacing: 6px;
+    font-family: $ff-san-serif;
+    margin-bottom: 0;
+    color: $color-gray;
+    text-transform: uppercase;
+}
+
+.welcome-text {
+    background-color: $color-black;
+    
+    text-align: center;
+    padding: 2.125rem;
+    color: $color-gray;
+}
+
+.image-left,
+.image-right {
+    background-color: $color-accent;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top left;
+    background-blend-mode: multiply;
+}
+
+.image-right {
+    background-image: url('../../assets/images/image-right.jpg');
+}
+
+.image-left {
+    background-image: url('../../assets/images/image-left.jpg');
+}

@@ -61,7 +61,7 @@ a:hover {
 
 h3 {
   font-family: "Six Caps", san-serif;
-  font-size: 3.56rem;
+  font-size: 2.5rem;
 }
 
 figure,
@@ -161,6 +161,53 @@ nav[data-open=false] ul {
 }
 nav[data-open=true] {
   right: 20%;
+}
+
+.welcome {
+  display: grid;
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .welcome {
+    grid-template-columns: auto 70vw auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .welcome {
+    grid-template-columns: auto 40vw auto;
+  }
+}
+
+.welcome-title {
+  font-size: 3.56rem;
+  letter-spacing: 6px;
+  font-family: "Six Caps", san-serif;
+  margin-bottom: 0;
+  color: #D9D9D9;
+  text-transform: uppercase;
+}
+
+.welcome-text {
+  background-color: #080708;
+  text-align: center;
+  padding: 2.125rem;
+  color: #D9D9D9;
+}
+
+.image-left,
+.image-right {
+  background-color: #3B60E4;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top left;
+  background-blend-mode: multiply;
+}
+
+.image-right {
+  background-image: url("../../assets/images/image-right.jpg");
+}
+
+.image-left {
+  background-image: url("../../assets/images/image-left.jpg");
 }
 
 /*# sourceMappingURL=index.css.map */
