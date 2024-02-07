@@ -9,3 +9,4 @@ CSS done using sass for convenience due to the availabilty of nesting, modular s
 The navigation section is revealed by clicking on a button on the top left corner of the page. Smooth scrolling is also added to prevent a sudden jump to the section. This layout is used for both mobile and desktop versions of the website.
 
 The portfolio projects section includes a modal which is used to give a summary of the project and allows a user to go to the repo url, the deployed website or to close the modal and continue exploration of other projects listed.
+The portfolio section is referred to as Gallery in the JS files. It uses 2 classes, one for the portfolio and one for the modal. It also includes a keyboard event listener so that if its open pressing the 'Esc" key closes the modal/
