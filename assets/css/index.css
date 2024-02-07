@@ -54,6 +54,7 @@ a {
   font-size: 4rem;
   text-decoration: none;
   color: #D9D9D9;
+  display: inline-block;
   transition: color ease 350ms;
 }
 a:hover {
@@ -383,7 +384,23 @@ footer p {
 }
 footer a {
   font-family: "Merriweather", serif;
-  font-size: 0.8rem;
+  font-size: 0.875rem;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.socials a {
+  font-size: 1.2rem;
+  padding: 1.2rem;
+}
+@media screen and (min-width: 780px) {
+  .socials {
+    flex-direction: row;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
