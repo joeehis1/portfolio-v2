@@ -59,6 +59,7 @@ a{
     font-size: 4rem;
     text-decoration: none;
     color: $color-gray;
+    display: inline-block;
     transition: color ease 350ms;
     &:hover {
         color: $color-accent;
