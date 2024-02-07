@@ -1,0 +1,26 @@
+
+.about-me {
+    margin-block: 3.3125rem;
+}
+
+
+.about-top {
+    display: grid;
+    grid-template-columns: [image-start] 18% [title-start] auto [image-end] 1rem [title-end];
+    grid-template-rows: [image-start] 38% [title-start] 7rem [title-end] auto [image-end];
+
+    img {
+        grid-column: image-start/image-end;
+        grid-row: image-start/image-end;
+    }
+
+    h2 {
+        grid-column: title-start/title-end;
+        grid-row: title-start/title-end;
+        margin: 0;
+        width: 40%;
+        text-align: left;
+    }
+
+
+}
