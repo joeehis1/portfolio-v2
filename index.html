@@ -15,7 +15,7 @@
         ></script>
     </head>
     <body>
-        <header>
+        <header id="home-section">
             <p hidden>
                 Photo by
                 <a
@@ -29,18 +29,22 @@
                 >
             </p>
             <h1 class="header-text">Welcome to my <span>portfolio</span></h1>
-            <button class="btn-nav-toggle" data-menu-open="false"></button>
-            <nav data-open="false">
+            <button
+                id="nav-toggle"
+                class="btn-nav-toggle"
+                data-menu-open="false"
+            ></button>
+            <nav id="nav-menu" data-open="false">
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#home-section">Home</a></li>
+                    <li><a href="#welcome-section">Welcome</a></li>
+                    <li><a href="#about-section">About Me</a></li>
+                    <li><a href="#portfolio-section">Projects</a></li>
+                    <li><a href="#contact-section">Contact</a></li>
                 </ul>
             </nav>
         </header>
-        <section id="home" class="welcome">
+        <section id="welcome-section" class="welcome">
             <div class="image-left">
                 <p hidden>
                     Photo by
@@ -81,7 +85,7 @@
                 </p>
             </div>
         </section>
-        <section class="about-me">
+        <section id="about-section" class="about-me">
             <div class="container">
                 <div class="about-top">
                     <img
@@ -126,7 +130,7 @@
                 </div>
             </div>
         </section>
-        <section class="portfolio">
+        <section id="portfolio-section" class="portfolio">
             <div class="modal" data-modal-visible="false">
                 <div class="modal-container">
                     <figure>
@@ -259,7 +263,7 @@
                 </ul>
             </div>
         </section>
-        <section class="contact">
+        <section id="contact-section" class="contact">
             <div class="container">
                 <h2>Contact me</h2>
                 <form action="">
