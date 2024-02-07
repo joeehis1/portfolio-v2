@@ -8,3 +8,64 @@
     background-color: $color-gray;
     padding-block: 3.5rem;
 }
+
+.portfolio-item{
+    color: $color-gray;
+    figure{
+        border: 1px solid;
+        display: grid;
+        display: grid;
+        grid-template-columns: [image-start] 0.1px [caption-start] auto [caption-end] 0.1px [image-end];
+        grid-template-rows: [image-start] 0.1px [caption-start] auto [caption-end] 0.1px [image-end];
+    }
+    img {
+        grid-column: image-start/image-end;
+        grid-row: image-start/image-end;
+        aspect-ratio: 1;
+
+    }
+
+    figcaption{
+        grid-column: caption-start/caption-end;
+        grid-row: caption-start/caption-end;
+        padding: 0.82rem;
+        background-color: $color-black-alpha;
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    &.featured{
+        figcaption{
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+
+    &:hover, &:focus{
+        
+    }
+}
+
+.portfolio-items{
+    display: grid;
+
+
+
+    @include for-size(mobile){
+        grid-template-columns: repeat(2, 1fr)
+
+    }
+    @include for-size(ipad) {
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+    @include for-size(laptop) {
+        grid-template-columns: repeat(4, 1fr);
+
+    }
+
+    .featured{
+        grid-column: 1 / span 2;
+        grid-row: 1/ span 2;
+    }
+}
