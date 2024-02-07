@@ -75,6 +75,12 @@ ul {
   list-style: none;
 }
 
+.container {
+  width: 95%;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
 button {
   cursor: pointer;
   background-color: #3B60E4;
