@@ -32,6 +32,10 @@
         background-color: $color-black-alpha;
         visibility: hidden;
         opacity: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: start;
     }
 
     &.featured{
@@ -42,30 +46,35 @@
     }
 
     &:hover, &:focus{
-        
+        figcaption{
+            visibility: visible;
+            opacity: 1;
+        }
     }
 }
 
 .portfolio-items{
     display: grid;
 
+    
 
-
-    @include for-size(mobile){
-        grid-template-columns: repeat(2, 1fr)
-
-    }
     @include for-size(ipad) {
+        grid-template-columns: repeat(2, 1fr);
+    
+        .featured {
+                grid-column: 1 / span 2;
+                grid-row: 1/ span 2;
+            }
+        
+    }
+
+    @include for-size(laptop) {
         grid-template-columns: repeat(3, 1fr);
 
+        .featured {
+            grid-column: 1 / span 2;
+            grid-row: 1/ span 2;
+        }
     }
-    @include for-size(laptop) {
-        grid-template-columns: repeat(4, 1fr);
-
-    }
-
-    .featured{
-        grid-column: 1 / span 2;
-        grid-row: 1/ span 2;
-    }
+    
 }
