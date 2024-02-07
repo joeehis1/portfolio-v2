@@ -22,6 +22,10 @@
         button {
             margin-left: auto;
             display: block;
+            &:hover{
+                background-color: $color-black;
+                color: $color-gray;
+            }
         }
 
         input,

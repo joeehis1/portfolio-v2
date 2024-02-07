@@ -416,6 +416,10 @@ nav[data-open=true] {
   margin-left: auto;
   display: block;
 }
+.contact form button:hover {
+  background-color: #080708;
+  color: #D9D9D9;
+}
 .contact form input,
 .contact form textarea {
   width: 100%;
