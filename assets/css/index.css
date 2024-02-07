@@ -282,32 +282,40 @@ nav[data-open=true] {
   background-color: rgba(8, 7, 8, 0.9490196078);
   visibility: hidden;
   opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: start;
 }
 .portfolio-item.featured figcaption {
   visibility: visible;
   opacity: 1;
 }
+.portfolio-item:hover figcaption, .portfolio-item:focus figcaption {
+  visibility: visible;
+  opacity: 1;
+}
+
 .portfolio-items {
   display: grid;
 }
-@media screen and (max-width: 490px) {
+@media (min-width: 491px) and (max-width: 780px) {
   .portfolio-items {
     grid-template-columns: repeat(2, 1fr);
   }
-}
-@media (min-width: 491px) and (max-width: 780px) {
-  .portfolio-items {
-    grid-template-columns: repeat(3, 1fr);
+  .portfolio-items .featured {
+    grid-column: 1/span 2;
+    grid-row: 1/span 2;
   }
 }
 @media screen and (min-width: 780px) {
   .portfolio-items {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
-}
-.portfolio-items .featured {
-  grid-column: 1/span 2;
-  grid-row: 1/span 2;
+  .portfolio-items .featured {
+    grid-column: 1/span 2;
+    grid-row: 1/span 2;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
