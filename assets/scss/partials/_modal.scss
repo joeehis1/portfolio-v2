@@ -2,16 +2,21 @@
 @use '../mixins' as *;
 
 .modal{
-    border: 1px solid;
     position: fixed;
     inset: 8px;
     background-color: $color-black;
     color: $color-gray;
-    display: grid;
+    
     place-items: center;
     font-size: 0.85rem;
-    z-index: 10
+    z-index: 10;
     // The z-index of the modal is made to be higher than the z-index of the nav toggle button
+    &[data-modal-visible="false"]{
+        display: none;
+    }
+    &[data-modal-visible="true"] {
+        display: grid;
+    }
 }
 
 
@@ -19,7 +24,21 @@
     width: 85%;
     max-width: 750px;
     margin: 0 auto;
-    border: 1px solid red;
+
+    figure{
+        position: relative;
+    }
+
+    figcaption{
+        position: absolute;
+        top: 20%;
+        padding-block: 0.6rem;
+        text-align: center;
+        left: 0;
+        width: 100%;
+        background-color: $color-black-alpha;
+        @include six-cap-title(2.5rem, inherit)
+    }
 }
 
 
@@ -28,10 +47,34 @@
 .modal-links{
     display: flex;
     justify-content: space-between;
-    margin-block: 1.1rem;
+    margin-block: 2.1rem;
     a{
         text-transform: uppercase;
         font-size: 2.5rem;
         line-height: 1;
+        display: flex;
+    }
+    i{
+        display: inline-block;
+        font-size: 1.2em;
+    }
+    @include for-size(mobile){
+        span{
+            visibility: none;
+            display: none;
+        }
+    }
+    @include for-size(ipad) {
+        a, button{
+            
+            flex-direction:column;
+            align-items: center;
+            gap: 0.6rem
+        }
+    }
+    @include for-size(laptop){
+        a, button{
+            gap: 0.8rem;
+        }
     }
 }

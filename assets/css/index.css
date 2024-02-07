@@ -96,7 +96,7 @@ button {
   transition: color 350ms ease, background-color 350ms ease;
 }
 button:hover {
-  color: var(--color-accent);
+  color: #3B60E4;
   background-color: whitesmoke;
 }
 
@@ -320,33 +320,76 @@ nav[data-open=true] {
 }
 
 .modal {
-  border: 1px solid;
   position: fixed;
   inset: 8px;
   background-color: #080708;
   color: #D9D9D9;
-  display: grid;
   place-items: center;
   font-size: 0.85rem;
   z-index: 10;
+}
+.modal[data-modal-visible=false] {
+  display: none;
+}
+.modal[data-modal-visible=true] {
+  display: grid;
 }
 
 .modal-container {
   width: 85%;
   max-width: 750px;
   margin: 0 auto;
-  border: 1px solid red;
+}
+.modal-container figure {
+  position: relative;
+}
+.modal-container figcaption {
+  position: absolute;
+  top: 20%;
+  padding-block: 0.6rem;
+  text-align: center;
+  left: 0;
+  width: 100%;
+  background-color: rgba(8, 7, 8, 0.9490196078);
+  font-size: 2.5rem;
+  letter-spacing: 6px;
+  font-family: "Six Caps", san-serif;
+  color: inherit;
+  text-transform: uppercase;
 }
 
 .modal-links {
   display: flex;
   justify-content: space-between;
-  margin-block: 1.1rem;
+  margin-block: 2.1rem;
 }
 .modal-links a {
   text-transform: uppercase;
   font-size: 2.5rem;
   line-height: 1;
+  display: flex;
+}
+.modal-links i {
+  display: inline-block;
+  font-size: 1.2em;
+}
+@media screen and (max-width: 490px) {
+  .modal-links span {
+    visibility: none;
+    display: none;
+  }
+}
+@media (min-width: 491px) and (max-width: 780px) {
+  .modal-links a, .modal-links button {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+  }
+}
+@media screen and (min-width: 780px) {
+  .modal-links a, .modal-links button {
+    gap: 0.8rem;
+  }
 }
 
 .contact {
