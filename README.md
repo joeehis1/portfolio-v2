@@ -15,6 +15,5 @@ The contact form works with the web3forms API to send emails on submission. I al
 
 Screenshots of the site for mobile and desktop are included below:
 
-![Desktop Screenshot](./assets/images/desktop-ss.png)
-![Mobile Screenshot](./assets/images/mobile-ss.png)
-![Modal View LS](./assets/images/project-modal-ss.png)
+![Desktop Screenshot](./assets/images/desktop.png)
+![Mobile Screenshot](./assets/images/mobile.png)
