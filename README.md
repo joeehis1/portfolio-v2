@@ -1,6 +1,6 @@
 # portfolio-v2
 
-This repository includes code for my portfolio website. See url below:
+This repository includes code for my portfolio website. See url:
 
 [LiveURL: ](https://joeehis1.github.io/portfolio-v2/)
 
