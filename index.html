@@ -275,8 +275,28 @@
         <section id="contact-section" class="contact">
             <div class="container">
                 <h2>Contact me</h2>
-                <form action="" data-status-visible="false">
-                    <p class="status" data-status="">
+                <form
+                    id="contact-form"
+                    action="POST"
+                    data-status-visible="false"
+                >
+                    <input
+                        type="hidden"
+                        name="access_key"
+                        value="c466d4b4-949d-442a-bf25-4e38d7368ba5"
+                    />
+                    <input
+                        type="hidden"
+                        name="subject"
+                        value="New Submission from Web3Forms"
+                    />
+                    <input
+                        type="checkbox"
+                        name="botcheck"
+                        id=""
+                        style="display: none"
+                    />
+                    <p class="status" data-status="" id="form-status">
                         This is a status message
                     </p>
                     <label>

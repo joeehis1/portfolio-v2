@@ -10,3 +10,7 @@ The navigation section is revealed by clicking on a button on the top left corne
 
 The portfolio projects section includes a modal which is used to give a summary of the project and allows a user to go to the repo url, the deployed website or to close the modal and continue exploration of other projects listed.
 The portfolio section is referred to as Gallery in the JS files. It uses 2 classes, one for the portfolio and one for the modal. It also includes a keyboard event listener so that if its open pressing the 'Esc" key closes the modal/
+
+The contact form works with the web3forms API to send emails on submission. I also included helpful messages in case of any issues while filling out the form.
+
+Screenshots of the site for mobile and desktop are included below:
