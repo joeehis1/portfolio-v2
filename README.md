@@ -14,3 +14,7 @@ The portfolio section is referred to as Gallery in the JS files. It uses 2 class
 The contact form works with the web3forms API to send emails on submission. I also included helpful messages in case of any issues while filling out the form.
 
 Screenshots of the site for mobile and desktop are included below:
+
+![Desktop Screenshot](./assets/images/desktop-ss.png)
+![Mobile Screenshot](./assets/images/mobile-ss.png)
+![Modal View LS](./assets/images/project-modal-ss.png)
