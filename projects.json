@@ -64,9 +64,29 @@
         "name": "Markdown Editor",
         "description": "This is a markdown editor that has a dark and light mode functionality built using react. I used redux for state management. All documents and previously selected items are saved to local storage so a user will be able to continue from where they were prior to closing the application.",
         "alt": "This is an image showing the initial state of the markdown editor project",
-        "isFeatured": true,
+        "isFeatured": false,
         "src": "project-markdown-editor.png",
         "repoURL": "https://github.com/joeehis1/markdown-editor",
         "liveSiteURL": "https://venerable-belekoy-9692bc.netlify.app/"
+    },
+    {
+        "id": "d95788c8-bd9a-46f8-9477-4d32674cc62b",
+        "name": "Task Manager",
+        "description": "This is a task manager built using HTML, CSS, javascript, jquery and bootstrap. It features a drag and drop functionality for moving added tasks from one pane to the other and a color coding system to indicate how far away from a due date an included task is.",
+        "alt": "This is an image showing the initial state of the task manager project",
+        "isFeatured": true,
+        "src": "project-task-manager.png",
+        "repoURL": "https://github.com/joeehis1/task-manager-app",
+        "liveSiteURL": "https://joeehis1.github.io/task-manager-app/"
+    },
+    {
+        "id": "981bcd70-f44c-4c1d-84a2-4035ca87b484",
+        "name": "Coding quiz",
+        "description": "This is a coding trivia application built using HTML, CSS and Javascript. It gives users multiple choice questions within a given time frame and scores them based on correct answers provided and penalises wrong answers by deducting time from the quiz duration",
+        "alt": "This is an image showing the initial state of the coding quiz project",
+        "isFeatured": false,
+        "src": "project-coding-quiz.png",
+        "repoURL": "https://github.com/joeehis1/coding-quiz",
+        "liveSiteURL": "https://joeehis1.github.io/coding-quiz/"
     }
 ]
