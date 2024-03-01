@@ -1,19 +1,19 @@
-@use '../variables' as *;
+@use "../variables" as *;
+@use "../mixins" as *;
 
 header {
     min-height: 100vh;
     display: grid;
     place-items: center;
-    background-image: url('../../assets/images/header-img.jpg');
+    background-image: url("../../assets/images/header-img.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-color: $color-black-alpha;
     background-blend-mode: multiply;
     background-position: center;
-
 }
 
-.header-text{
+.header-text {
     text-align: center;
     color: white;
 
@@ -48,5 +48,30 @@ nav {
     &[data-open="true"] {
         right: 20%;
     }
-    
+
+    @include for-size(laptop) {
+        a {
+            font-size: 2.5rem;
+        }
+        &[data-open] {
+            // position: static;
+            top: 0rem;
+            left: 0rem;
+            right: 0rem;
+            display: block;
+            min-height: auto;
+            border-radius: 0.5rem;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+            border: 1px solid $color-accent-alpha;
+            transition: top 350ms ease;
+            ul {
+                display: flex;
+                justify-content: space-evenly;
+            }
+            &.go-up {
+                top: -1.8rem;
+            }
+        }
+    }
 }

@@ -10,10 +10,11 @@ export class Modal {
         this.modalDesc = this.modal.querySelector("#project-description");
         this.modalRepoAnchor = this.modal.querySelector("#project-repo");
         this.modalLiveURL = this.modal.querySelector("#project-live");
+        this.modalContainer = this.modal.querySelector("#modal-container");
+        this.modalContainer.style.transition = `opacity 350ms ease`;
     }
 
     open(project) {
-        console.log(project);
         this.modalImage.src = project.src;
         this.modalTitle.textContent = project.name;
         this.modalDesc.innerHTML = `<p>${project.description}</p>`;
@@ -21,6 +22,10 @@ export class Modal {
         this.modalLiveURL.href = project.liveSiteURL;
         this.isOpen = true;
         this.modal.setAttribute("data-modal-visible", "true");
+        setTimeout(() => {
+            this.modalContainer.style.opacity = 1;
+            this.modalContainer.style.display = "block";
+        }, 400);
         this.modalLinks.addEventListener("click", this.modalEvent);
     }
 
@@ -48,8 +53,11 @@ export class Modal {
     }
 
     close() {
-        console.log("closing modal");
         this.isOpen = false;
-        this.modal.setAttribute("data-modal-visible", "false");
+        this.modalContainer.style.opacity = 0;
+        setTimeout(() => {
+            this.modal.setAttribute("data-modal-visible", "false");
+            this.modalContainer.style.display = "none";
+        }, 400);
     }
 }
