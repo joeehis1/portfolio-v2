@@ -19,3 +19,24 @@ navBar.addEventListener("click", function (e) {
         navToggler.setAttribute("data-menu-open", "false");
     }
 });
+
+const portfolio = document.querySelector("#portfolio-section");
+
+const observer = new IntersectionObserver(
+    (entries) => {
+        entries.forEach((entry) => {
+            if (!entry.isIntersecting) {
+                console.log("shown");
+                navBar.classList.remove("go-up");
+                return;
+            }
+            navBar.classList.add("go-up");
+        });
+    },
+    {
+        root: null,
+        threshold: 0.2,
+    }
+);
+
+observer.observe(portfolio);
