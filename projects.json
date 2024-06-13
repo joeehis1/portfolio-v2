@@ -88,5 +88,14 @@
         "src": "project-coding-quiz.png",
         "repoURL": "https://github.com/joeehis1/coding-quiz",
         "liveSiteURL": "https://joeehis1.github.io/coding-quiz/"
+    },
+    {
+        "id": "5fdaa7f3-c6d3-4729-8d60-11a24ab493ca",
+        "name": "Chakula App",
+        "description": "A full stack application built using node, express and mongodb. It provides a sleek interface that allows an authenticated user to generate a recipe based on a users fitness goals and caloric requirments. It also allows users to search prices of grocery items from websites of popular grocery stores. This application is still under active development.",
+        "isFeatured": true,
+        "src": "project-chakula-app.png",
+        "repoURL": null,
+        "liveSiteURL": "https://chakula-app.onrender.com/landing"
     }
 ]
