@@ -18,8 +18,8 @@ export class Modal {
         this.modalImage.src = project.src;
         this.modalTitle.textContent = project.name;
         this.modalDesc.innerHTML = `<p>${project.description}</p>`;
-        this.modalRepoAnchor.href = project.repoURL;
-        this.modalLiveURL.href = project.liveSiteURL;
+        this.modalRepoAnchor.href = project?.repoURL;
+        this.modalLiveURL.href = project?.liveSiteURL;
         this.isOpen = true;
         this.modal.setAttribute("data-modal-visible", "true");
         setTimeout(() => {

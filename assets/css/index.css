@@ -390,7 +390,7 @@ nav[data-open=true] {
   box-shadow: 0px 0px 3px 3px #D9D9D9;
   padding: 1.5rem;
   border-radius: 5px;
-  margin: 8rem auto;
+  margin: 0 auto;
   flex-direction: column;
 }
 .modal-container figure {
