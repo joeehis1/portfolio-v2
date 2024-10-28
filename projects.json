@@ -1,13 +1,13 @@
 [
     {
         "id": "71c4d42a-f013-4cdf-9fda-42f6dc66b9a4",
-        "name": "Color Scheme Generator",
-        "description": "This is a color scheme generator built using vanilla javascript. It gets its data from the color API.A typical user has the ability to select a color, define a color scheme and generate a scheme to be used for their particular needs.",
-        "src": "project-color-scheme-generator.png",
-        "alt": "An image showing the active state of the color scheme generator project",
-        "repoURL": "https://github.com/joeehis1/Color-scheme-generator",
+        "name": "Calculator",
+        "description": "This is a calculator built using react. It supports all of the basic operations of addition, multiplication, subtraction and division. It also allows users to alternate between color themes to suit their individual preferences.",
+        "src": "project-calculator-app.png",
+        "alt": "An image showing the initial state of the calculator application in its default state",
+        "repoURL": "https://github.com/joeehis1/Calculator-Application",
         "isFeatured": false,
-        "liveSiteURL": "https://hilarious-cheesecake-7711e7.netlify.app/"
+        "liveSiteURL": "https://simpulcalk.netlify.app/"
     },
     {
         "id": "6da12013-a680-4267-8c72-8a680ff106aa",
@@ -74,7 +74,7 @@
         "name": "Task Manager",
         "description": "This is a task manager built using HTML, CSS, javascript, jquery and bootstrap. It features a drag and drop functionality for moving added tasks from one pane to the other and a color coding system to indicate how far away from a due date an included task is.",
         "alt": "This is an image showing the initial state of the task manager project",
-        "isFeatured": true,
+        "isFeatured": false,
         "src": "project-task-manager.png",
         "repoURL": "https://github.com/joeehis1/task-manager-app",
         "liveSiteURL": "https://joeehis1.github.io/task-manager-app/"
@@ -94,8 +94,19 @@
         "name": "Chakula App",
         "description": "A full stack application built using node, express and mongodb. It provides a sleek interface that allows an authenticated user to generate a recipe based on a users fitness goals and caloric requirments. It also allows users to search prices of grocery items from websites of popular grocery stores. This application is still under active development.",
         "isFeatured": true,
+        "alt": "An image showing the welcome page of the chakula app",
         "src": "project-chakula-app.png",
-        "repoURL": null,
+        "repoURL": "https://github.com/chakula-accelerator7/chakula-app",
         "liveSiteURL": "https://chakula-app.onrender.com/landing"
+    },
+    {
+        "id": "596360ed-c0b4-4a32-80ed-3709652a7086",
+        "name": "Countdown Timer",
+        "description": "A single page application built with react and typescript. It works as a traditional pomodoro timer while giving users the ability to modify the duration of a work interval, a short break interval and the long break interval. It also allows users to change the colors in use by the application.",
+        "isFeatured": false,
+        "alt": "An image showing the initial state of the pomodoro countdown timer application",
+        "src": "project-pomodoro-app.png",
+        "repoURL": "https://github.com/joeehis1/pomodoro-app",
+        "liveSiteURL": "https://pomo-interval.netlify.app/"
     }
 ]

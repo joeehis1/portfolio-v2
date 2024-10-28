@@ -167,7 +167,6 @@ nav {
   min-height: 100vh;
   background-color: #080708;
   display: grid;
-  place-items: center;
   transition: right 350ms ease;
 }
 nav[data-open=false] {
@@ -178,6 +177,7 @@ nav[data-open=false] ul {
 }
 nav[data-open=true] {
   right: 20%;
+  place-items: center;
 }
 @media screen and (min-width: 780px) {
   nav a {

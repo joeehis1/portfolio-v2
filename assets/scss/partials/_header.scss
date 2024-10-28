@@ -34,7 +34,7 @@ nav {
     min-height: 100vh;
     background-color: $color-black;
     display: grid;
-    place-items: center;
+    // place-items: center;
     transition: right 350ms ease;
 
     &[data-open="false"] {
@@ -47,6 +47,7 @@ nav {
 
     &[data-open="true"] {
         right: 20%;
+        place-items: center;
     }
 
     @include for-size(laptop) {
@@ -67,6 +68,7 @@ nav {
             transition: top 350ms ease;
             ul {
                 display: flex;
+                // background-color: orange;
                 justify-content: space-evenly;
             }
             &.go-up {
